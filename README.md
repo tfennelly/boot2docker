@@ -190,6 +190,8 @@ $ boot2docker ssh "echo $'EXTRA_ARGS=\"--insecure-registry <YOUR INSECURE HOST>\
 
 then you should be able to do a docker push/pull.
 
+The value to use for `<YOUR INSECURE HOST>` will be your `boot2docker ip`, along with the port number of your registry service e.g. `192.168.59.104:5000`. Also note that you will need to restart your registry container after executing the above command(s).
+
 ##### VirtualBox Guest Additions
 
 Alternatively, Boot2Docker includes the VirtualBox Guest Additions built in for
